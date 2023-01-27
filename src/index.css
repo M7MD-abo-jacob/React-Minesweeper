@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+html {
+  font-size: 17px;
+  overflow-x: hidden;
+  font-family: Serif;
+}
+
+body {
+  margin: 0 auto;
+  overflow: hidden;
+  font-weight: bold;
+  text-align: center;
+  width: min(500px, 98%);
+  background-color: #222;
+}
+
+/* header .brand h3 {
+    font-size: 2rem;
+    font-variant: small-caps;
+    font-weight: 900;
+    font-family: cursive;
+} */
+
+/*side panel*/
+
+header .side-panel {
+  transition: 0.5s;
+  height: 100vh;
+  width: min(50vw, 20rem);
+  background-color: #666;
+  z-index: 99;
+}
+
+@media (min-width: 600px) {
+  header .side-panel {
+    /* right: -1000px; */
+  }
+}
+
+header .options-icon:hover .side-panel {
+  /* right: -0.7rem; */
+}
+
+.side-panel .game-image {
+  margin: 2rem auto;
+  width: 5rem;
+  height: 5rem;
+}
+
+.side-panel .game-image i {
+  text-align: center;
+  color: rgb(255, 210, 0);
+}
+
+.side-panel .socials ul {
+  font-size: 1em;
+  list-style: none;
+  margin: 0;
+  text-align: left;
+  padding: 1em;
+}
+
+.socials ul li {
+  height: 2rem;
+}
+
+.socials ul a {
+  text-decoration: none;
+  color: #aaf;
+}
+
+/*controls*/
+
+.controls {
+  margin: 0 0;
+  width: 100%;
+  aspect-ratio: 8;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.controls div {
+  width: auto;
+  width: 25%;
+}
+
+.controls button {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 5px;
+  background-image: linear-gradient(#000, #333);
+}
+
+.controls button div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:disabled {
+  font-size: 0.8rem;
+  background-color: #666;
+  font-weight: bold;
+  color: #f55;
+  border: 2px inset red;
+}
+
+#smilie {
+  background-color: #666;
+}
+
+#smile {
+  color: #fd0;
+}
+
+#flag-button {
+  color: #bd0d0d;
+  background-image: linear-gradient(#ddd, #aaa);
+}
+
+/*form*/
+
+form {
+  color: #fff;
+  margin: 0 auto;
+  padding: 1em;
+  width: 80%;
+  display: flex;
+  height: 75vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+form span {
+  color: #1d8cd1;
+}
+
+form > * {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+form > button {
+  width: min(250px, 80%);
+}
+
+/*board*/
+
+#board {
+  /* aspect-ratio: 2/2.2; */
+  height: 80vh;
+  border: 6px solid #000;
+  background-color: #000;
+  margin: 0 auto;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+form {
+  clear: both;
+}
+
+/*tiles*/
+
+#board div {
+  border: 2px solid #000;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  /* background-image: linear-gradient(#1d8cd1, 30%, #102780); */
+  /* text */
+  font-size: 2rem;
+}
+#board div.clicked {
+  /* background-image: linear-gradient(#0c1e69, 30%, #00092b); */
+}
+
+/*giving different colors for different numbers*/
+
+.x1 {
+  color: rgb(0, 170, 255);
+}
+
+.x2 {
+  color: limegreen;
+}
+
+.x3 {
+  color: red;
+}
+
+.x4 {
+  color: aqua;
+}
+
+.x5 {
+  color: fuchsia;
+}
+
+.x6 {
+  color: orange;
+}
+
+.x7 {
+  color: orange;
+}
+
+.x8 {
+  color: orange;
+}
+
+.flag-toggled {
+  background: linear-gradient(#333, #afa) !important;
+}
