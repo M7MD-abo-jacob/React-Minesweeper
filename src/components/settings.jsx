@@ -7,7 +7,7 @@ const Settings = () => {
   const dispatch = useDispatch();
 
   return (
-    <form className="settings">
+    <form className="settings  w-100 bg-gradient-to-b from-sky-900 to-gray-900 text-white px-2 sm:px-10 flex h-[80vh]">
       <label htmlFor="mn">mines count</label>
       <input
         type="range"

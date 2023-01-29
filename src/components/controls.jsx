@@ -31,29 +31,36 @@ const Controls = () => {
     } else return <FaRegSmileBeam />;
   };
   return (
-    <div className="controls">
-      <div>
-        <button disabled>
+    <div className="controls mx-0 my-0 pb-1 w-full flex items-center content-center justify-between bg-gradient-to-b from-cyan-900 to-sky-700">
+      <div className="w-1/4">
+        <button
+          disabled
+          className="w-full p-2 text-sm font-bold rounded-md bg-zinc-700 text-red-500 border-2 border-red-500 border-dashed "
+        >
           mines: <span id="mines-count">{minesLeft()}</span>
         </button>
       </div>
-      <div className="new-game">
-        <button id="smilie" onClick={() => dipatch(newGame())}>
+      <div className="new-game w-1/4">
+        <button
+          id="smilie"
+          className="w-full p-2 rounded-md bg-gradient-to-b from-zinc-900 to-gray-800"
+          onClick={() => dipatch(newGame())}
+        >
           {" "}
-          <div id="smile" className="text-3xl">
+          <div id="smile" className="text-3xl text-yellow-400">
             {smilie()}
           </div>
         </button>
       </div>
-      <div>
+      <div className="w-1/4">
         <button
           id="flag-button"
-          className={`flag-${flagToggled ? "toggled" : ""}`}
+          className={`flag-${flagToggled ? "" : ""} w-full p-2 rounded-md`}
           onClick={() => {
             dipatch(toggleFlag());
           }}
         >
-          <FaFontAwesomeFlag />
+          <FaFontAwesomeFlag className="text-red-600" />
         </button>
       </div>
     </div>

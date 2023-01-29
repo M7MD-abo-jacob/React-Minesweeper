@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="relative">
+      <main className="relative from-cyan-900 to-blue-900">
         <Controls />
         {gameStarted ? <Board /> : <Settings />}
       </main>

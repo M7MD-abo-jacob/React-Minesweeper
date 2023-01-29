@@ -28,6 +28,9 @@ const Tile = ({ tile }) => {
     if (tile.state !== "clicked") {
       className += " cursor-pointer from-cyan-600 to-blue-800 ";
     }
+    if (tile.state === "flagged") {
+      className += " from-orange-300 to-orange-500";
+    }
     return className;
   };
 
