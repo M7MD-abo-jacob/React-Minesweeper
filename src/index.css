@@ -25,86 +25,13 @@ main {
   height: 90vh;
 }
 
-/*side panel*/
-
-header .side-panel {
-  transition: 0.5s;
-}
-
-/*controls*/
-
-.controls button div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#flag-button {
-  color: #bd0d0d;
-  background-image: linear-gradient(#ddd, #aaa);
-}
-
-/*form*/
-
-form {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-form span {
-  color: #1d8cd1;
-}
-
-form > * {
-  width: 100%;
-  font-size: 1.5rem;
-}
-
-form > button {
-  width: min(250px, 80%);
-}
-
-/*board*/
-
-#board {
-  /* aspect-ratio: 2/2.2; */
-  height: 80vh;
-  border: 6px solid #000;
-  /* background-color: #000; */
-  margin: 0 auto;
-  /* display: flex;
-  flex-wrap: wrap; */
-}
-
-form {
-  clear: both;
-}
-
-/*tiles*/
-
-#board div {
-  border: 2px solid #000;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  /* background-image: linear-gradient(#1d8cd1, 30%, #102780); */
-  /* text */
-  font-size: 2rem;
-}
-#board div.clicked {
-  /* background-image: linear-gradient(#0c1e69, 30%, #00092b); */
-}
-
 /*giving different colors for different numbers*/
-
 .x1 {
-  color: rgb(0, 170, 255);
+  color: lightseagreen;
 }
 
 .x2 {
-  color: limegreen;
+  color: lime;
 }
 
 .x3 {
@@ -120,7 +47,7 @@ form {
 }
 
 .x6 {
-  color: orange;
+  color: yellow;
 }
 
 .x7 {
@@ -128,9 +55,5 @@ form {
 }
 
 .x8 {
-  color: orange;
-}
-
-.flag-toggled {
-  background: linear-gradient(#333, #afa) !important;
+  color: lightslategray;
 }

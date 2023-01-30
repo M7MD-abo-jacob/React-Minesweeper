@@ -6,7 +6,7 @@ const Board = () => {
   return (
     <div
       id="board"
-      className="bg-gradient-to-b from-sky-700 to-sky-900"
+      className="h-[80vh] bg-black border-black border-4"
       style={{
         display: "grid",
         gridTemplateColumns: `repeat(${width}, ${100 / width}%`,

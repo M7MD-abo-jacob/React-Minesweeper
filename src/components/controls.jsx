@@ -30,6 +30,7 @@ const Controls = () => {
       return <FaRegSadTear />;
     } else return <FaRegSmileBeam />;
   };
+
   return (
     <div className="controls mx-0 my-0 pb-1 w-full flex items-center content-center justify-between bg-gradient-to-b from-cyan-900 to-sky-700">
       <div className="w-1/4">
@@ -47,7 +48,10 @@ const Controls = () => {
           onClick={() => dipatch(newGame())}
         >
           {" "}
-          <div id="smile" className="text-3xl text-yellow-400">
+          <div
+            id="smile"
+            className="text-3xl text-yellow-400 hover:animate-wiggle"
+          >
             {smilie()}
           </div>
         </button>
@@ -55,12 +59,16 @@ const Controls = () => {
       <div className="w-1/4">
         <button
           id="flag-button"
-          className={`flag-${flagToggled ? "" : ""} w-full p-2 rounded-md`}
+          className={`bg-gradient-to-b from-gray-400 ${
+            flagToggled ? "to-green-400" : "to-gray-50"
+          } w-full p-2 rounded-md`}
           onClick={() => {
             dipatch(toggleFlag());
           }}
         >
-          <FaFontAwesomeFlag className="text-red-600" />
+          <div className="hover:animate-bounce">
+            <FaFontAwesomeFlag className="text-red-600" />
+          </div>
         </button>
       </div>
     </div>

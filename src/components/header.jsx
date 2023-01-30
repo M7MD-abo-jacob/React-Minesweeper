@@ -24,12 +24,12 @@ const Header = () => {
             dispatch(toggleSide(true));
           }}
         >
-          <BsInfoCircleFill className="text-3xl" />
+          <BsInfoCircleFill className="text-3xl hover:animate-spin" />
         </button>
         <div
           className={`${
             sideToggled ? "block" : "hidden"
-          } absolute z-10 top-0 bottom-0 right-0 h-screen w-[90vw] md:w-80 bg-gradient-to-b from-gray-800 to-gray-600 flex flex-col`}
+          } absolute z-10 top-0 bottom-0 right-0 h-screen w-[90vw] sm:w-80 bg-gradient-to-b from-gray-800 to-gray-600 flex flex-col`}
         >
           <button
             className="self-start px-5 py-3"

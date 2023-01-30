@@ -14,13 +14,13 @@ const Tile = ({ tile }) => {
   };
 
   const tileClass = () => {
-    let className = `x${tile.content} bg-gradient-to-b grid place-content-center `;
+    let className = `x${tile.content} bg-gradient-to-b grid place-content-center text-3xl rounded h-full w-full border-2 border-black `;
     if (tile.state === "clicked" && !tile.isMine) {
       className += " from-gray-900 to-sky-900 ";
     }
     if (tile.isMine && gameOver) {
       if (gameWon) {
-        className += " from-green-800 to-green-900 ";
+        className += " from-green-300 to-green-600 ";
       } else {
         className += " from-stone-900 to-red-900 ";
       }
@@ -40,9 +40,9 @@ const Tile = ({ tile }) => {
     }
     if (tile.isMine) {
       if (gameWon) {
-        return <FaFontAwesomeFlag className="text-green-500" />;
+        return <FaFontAwesomeFlag className="" />;
       } else if (gameOver) {
-        return <GiMineExplosion className="text-red-600" />;
+        return <GiMineExplosion className="text-red-600 " />;
       }
     }
     if (tile.state === "clicked") {
