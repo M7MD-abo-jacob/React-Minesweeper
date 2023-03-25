@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+html {
+  font-size: 17px;
+  overflow-x: hidden;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  overflow: hidden;
+  font-weight: bold;
+  font-weight: 900 !important;
+  text-align: center;
+  width: min(500px, 98%);
+  background-color: #222;
+  background: linear-gradient(170deg, #a2ddcb, #439fb2);
+}
+
+main {
+  position: relative;
+  height: 100vh;
+}
+
+#controls * {
+  font-size: 1.3rem;
+}
+
+#controls #smilie svg {
+  font-size: 2.5rem;
+  stroke-width: 20px;
+}
+
+#controls #timer svg {
+  font-size: xx-large;
+}
+
+/*giving different colors for different numbers*/
+
+.x1 {
+  color: blue;
+}
+
+.x2 {
+  color: #01ac01;
+}
+
+.x3 {
+  color: red;
+}
+
+.x4 {
+  color: aqua;
+}
+
+.x5 {
+  color: fuchsia;
+}
+
+.x6 {
+  color: yellow;
+}
+
+.x7 {
+  color: orange;
+}
+
+.x8 {
+  color: lightslategray;
+}
