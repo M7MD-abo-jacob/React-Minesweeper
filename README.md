@@ -1,6 +1,8 @@
 # React-Minesweeper 🚩
 
-## Check out [My Portfolio](mohammad-kikhia.vercel.app) to see other projects.
+## Check it out [here. 🟢](https://react-js-minesweeper.vercel.app/)
+
+## Or check out [My Portfolio](mohammad-kikhia.vercel.app) to see other projects.
 
 ## Revisiting an old project!
 
@@ -17,7 +19,5 @@
 - Redux-toolkit
 - Tailwind css
 - React icons
-
-## Check it out [here. 🟢](https://react-js-minesweeper.vercel.app/)
 
 # **THANKS** for stopping by. ❤
